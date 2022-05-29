@@ -100,8 +100,8 @@ export default function Home() {
         <Script src="/js/mixitup.min.js"></Script>
         <Script src="/js/scrollreveal.min.js"></Script>
         <Script src="https://unpkg.com/scrollreveal"></Script>
-        
-        <header class={scrollPosition >= 50 ? "header scroll-header" : "header"} id="header">
+
+        <header className={scrollPosition >= 50 ? "header scroll-header" : "header"} id="header">
           <nav className="nav container">
             <a href="#" className="nav__logo">
               <i className="ri-steering-line"></i> Zoom
