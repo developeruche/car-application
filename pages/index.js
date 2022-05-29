@@ -20,14 +20,7 @@ export default function Home() {
       window.addEventListener("scroll", handleScroll);
     }
 
-    let mixerFeatured = mixitup(".featured__content", {
-      selectors: {
-        target: ".featured__card",
-      },
-      animation: {
-        duration: 300
-      }
-    })
+
 
     const linkFeatured = document.querySelectorAll(".featured__item")
 
@@ -100,6 +93,7 @@ export default function Home() {
         <Script src="/js/mixitup.min.js"></Script>
         <Script src="/js/scrollreveal.min.js"></Script>
         <Script src="https://unpkg.com/scrollreveal"></Script>
+        <Script src="/js/main.js"></Script>
 
         <header className={scrollPosition >= 50 ? "header scroll-header" : "header"} id="header">
           <nav className="nav container">
