@@ -2,6 +2,7 @@ import Head from 'next/head';
 import {useState, useEffect} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import Script from "next/script";
 
 
 export default function Home() {
@@ -89,13 +90,17 @@ export default function Home() {
 
         {/* <!--=============== SWIPER CSS ===============--> */}
         <link rel="stylesheet" href="" />
-        <script src="/js/mixitup.min.js"></script>
-        <script src="/js/scrollreveal.min.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
+
 
       </Head>
 
       <main className="app__body">
+
+        {/* Importing JS Script */}
+        <Script src="/js/mixitup.min.js"></Script>
+        <Script src="/js/scrollreveal.min.js"></Script>
+        <Script src="https://unpkg.com/scrollreveal"></Script>
+        
         <header class={scrollPosition >= 50 ? "header scroll-header" : "header"} id="header">
           <nav className="nav container">
             <a href="#" className="nav__logo">
